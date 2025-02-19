@@ -57,6 +57,14 @@ module.exports = {
         ColorCaribbeanGreen: "#15CF92",
         ColorMidnightMoss: "#010D09",
         ColorHoneySuckle: "#E9FF97",
+        'aotu-red': {
+          light: '#67e8f9',
+          DEFAULT: '#FF0000',
+          dark: '#0e7490',
+        },
+        'aotu-grey': {
+          DEFAULT: '#21203C',
+        },
       },
     },
   },
