@@ -1,0 +1,12 @@
+# Redirects for AOTU
+/   /index-aotu.html   200
+/servicios-importacion    /servicios.html   200
+/servicio/busqueda-proveedores-china    /busqueda-proveedores.html   200
+/servicio/gestion-pedido-china    /gestion-pedido.html   200
+/servicio/logistica-china-argentina    /logistica-internacional.html   200
+/servicio/tramites-aduana-argentina    /aduana-argentina.html   200
+/planes    /precios.html   200
+/quienes-somos    /quienes-somos.html   200
+
+# Catch all
+/*    /404.html   404
