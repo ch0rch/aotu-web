@@ -3030,11 +3030,6 @@ p:last-child {
   border-color: rgb(255 255 255 / 0.05);
 }
 
-.border-aotu-grey {
-  --tw-border-opacity: 1;
-  border-color: rgb(33 32 60 / var(--tw-border-opacity, 1));
-}
-
 .bg-ColorAlmond {
   --tw-bg-opacity: 1;
   background-color: rgb(235 222 206 / var(--tw-bg-opacity, 1));
@@ -3316,6 +3311,16 @@ p:last-child {
   background-color: rgb(222 0 0 / 0.1);
 }
 
+.bg-aotu-grey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 32 60 / var(--tw-bg-opacity, 1));
+}
+
+.bg-aotu-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
@@ -3336,16 +3341,6 @@ p:last-child {
 
 .bg-white\/5 {
   background-color: rgb(255 255 255 / 0.05);
-}
-
-.bg-aotu-red {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
-}
-
-.bg-aotu-grey {
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 32 60 / var(--tw-bg-opacity, 1));
 }
 
 .bg-opacity-5 {
@@ -3570,6 +3565,10 @@ p:last-child {
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .pb-\[10px\] {
@@ -5283,6 +5282,12 @@ p:last-child {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
+.after\:bg-aotu-red::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
+}
+
 .after\:px-4::after {
   content: var(--tw-content);
   padding-left: 1rem;
@@ -5497,11 +5502,6 @@ p:last-child {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:bg-aotu-grey:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 32 60 / var(--tw-bg-opacity, 1));
-}
-
 .hover\:bg-opacity-100:hover {
   --tw-bg-opacity: 1;
 }
@@ -5604,6 +5604,11 @@ p:last-child {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-aotu-red:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity, 1));
 }
 
 .hover\:underline:hover {
