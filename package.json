@@ -1,22 +1,25 @@
 {
-    "name": "tailwind",
+    "name": "aotu-website",
     "version": "1.0.0",
-    "description": "",
-    "main": "tailwind.config.js",
+    "main": "index.js",
     "scripts": {
-        "start:server": "live-server --port=3000 --open=./index.html",
         "dev:css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/style.css --watch",
-        "start": "concurrently \"npm:start:server\" \"npm run dev:css\"",
-        "minify": "tailwindcss -o ./assets/css/style.min.css --minify"
+        "dev:11ty": "eleventy --serve",
+        "dev": "concurrently \"npm run dev:11ty\" \"npm run dev:css\"",
+        "build:css": "tailwindcss -o ./assets/css/style.min.css --minify",
+        "build:11ty": "eleventy",
+        "build": "npm run build:css && npm run build:11ty"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
         "concurrently": "^8.2.2",
-        "live-server": "^1.2.2",
         "prettier": "^3.1.1",
         "prettier-plugin-tailwindcss": "^0.5.9",
         "tailwindcss": "^3.4.0"
+    },
+    "dependencies": {
+        "@11ty/eleventy": "^3.0.0"
     }
 }

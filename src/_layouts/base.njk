@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if title %}{{ title }} - {% endif %}AOTU | Importar productos de China</title>
+    <meta name="description" content="{{ description | default('Encontramos proveedores confiables en China, negociamos por vos y gestionamos todo el proceso de importación.') }}" />
+
+    <!-- Favicon  -->
+    <link rel="icon" href="/assets/img/favicon.png" />
+
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="/assets/fonts/iconfonts/font-awesome/stylesheet.css" />
+    <!-- Site font -->
+    <link rel="stylesheet" href="/assets/fonts/webfonts/inter/stylesheet.css" />
+    <link rel="stylesheet" href="/assets/fonts/webfonts/plus-jakarta-sans/stylesheet.css" />
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="/assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/css/vendors/jos.css" />
+    <link rel="stylesheet" href="/assets/css/vendors/menu.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/custom.css" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
+
+    <script async src="https://tally.so/widgets/embed.js"></script>
+</head>
+
+<body>
+    <div class="page-wrapper relative z-[1] bg-white">
+        {% include "header.njk" %}
+
+        <main class="main-wrapper relative overflow-hidden">
+            {{ content | safe }}
+        </main>
+
+        {% include "footer.njk" %}
+    </div>
+
+    <!--Vendor js-->
+    <script src="/assets/js/vendors/counterup.js" type="module"></script>
+    <script src="/assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="/assets/js/vendors/fslightbox.js"></script>
+    <script src="/assets/js/vendors/jos.min.js"></script>
+    <script src="/assets/js/vendors/menu.js"></script>
+
+    <!-- Main js -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
