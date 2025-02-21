@@ -1,0 +1,80 @@
+---
+layout: base.njk
+title: Servicios
+description: Descubrí todos nuestros servicios de importación desde China. Desde búsqueda de proveedores hasta gestión aduanera en Argentina.
+permalink: /servicios-importacion/
+---
+
+<main class="main-wrapper relative overflow-hidden">
+    <!--...::: Breadcrumb Section Start :::... -->
+    <section class="section-breadcrumb">
+        <div class="breadcrumb-wrapper">
+            <div class="container-default">
+                <div class="breadcrumb-block">
+                    <h1 class="breadcrumb-title">Nuestros Servicios para Importar de China</h1>
+                    <ul class="breadcrumb-nav">
+                        <li><a href="/">Inicio</a></li>
+                        <li>Servicios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--...::: Service Section Start :::... -->
+    <div class="section-service">
+        <div class="relative z-10 overflow-hidden">
+            <div class="section-space">
+                <div class="container-default">
+                    <div class="grid gap-6 sm:grid-cols-2">
+                        {% for servicio in servicios.servicios %}
+                        <div class="jos" data-jos_delay="{{ servicio.delay }}">
+                            <div class="group rounded-[10px] bg-white p-8 transition-all duration-300 ease-in-out hover:shadow-[0_4px_60px_0_rgba(10,16,47,0.06)] lg:p-10">
+                                <div class="flex flex-col gap-x-10 gap-y-6 sm:gap-y-8 lg:flex-row">
+                                    <div class="relative mx-auto flex w-16 items-center justify-center lg:w-[98px]">
+                                        <img src="{{ servicio.imagen }}" 
+                                             alt="{{ servicio.title }}" 
+                                             width="98" 
+                                             height="100" 
+                                             class="opcity-100 h-auto w-full transition-all duration-300 ease-in-out group-hover:opacity-0" />
+                                        <img src="{{ servicio.imagen }}" 
+                                             alt="{{ servicio.title }}" 
+                                             width="98" 
+                                             height="100" 
+                                             class="absolute h-auto w-full opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100" />
+                                    </div>
+                                    <div class="flex-1 text-center lg:text-left">
+                                        <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack lg:text-2xl">
+                                            {{ servicio.title }}
+                                        </div>
+                                        <p class="mb-5 line-clamp-2 text-ColorBlack/80">
+                                            {{ servicio.description }}
+                                        </p>
+                                        <a href="{{ servicio.link }}" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-aotu-red">
+                                            {{ servicio.linkText }}
+                                            <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Horizontal Separator -->
+    <div class="horizontal-line bg-ColorBlack"></div>
+
+    <!--...::: FAQ Section Start :::... -->
+    {# En servicios.njk #}
+    {% set faqTitle = "Preguntas frecuentes sobre importación" %}
+    {% set showCTA = true %}
+    {% include "faq-section.njk" %}
+
+    {% include "cta.njk" %}
+</main>

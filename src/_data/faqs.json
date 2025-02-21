@@ -1,0 +1,44 @@
+{
+    "faqs": {
+      "importacion": [
+        {
+          "pregunta": "¿Qué necesito para empezar a importar desde China?",
+          "respuesta": "Para empezar a importar necesitás una empresa constituida en Argentina (puede ser monotributo o sociedad), estar inscripto como importador en AFIP y contar con el capital necesario para la operación. En AOTU te ayudamos con todo el proceso y te guiamos paso a paso."
+        },
+        {
+          "pregunta": "¿Cuál es el monto mínimo para importar desde China?",
+          "respuesta": "El monto mínimo recomendado para una importación desde China suele ser de USD 5,000, aunque esto puede variar según el producto. Este monto permite cubrir los costos logísticos y obtener precios competitivos de los proveedores."
+        },
+        {
+          "pregunta": "¿Cuánto tiempo tarda una importación desde China?",
+          "respuesta": "Los tiempos varían según el producto y el tipo de transporte. En general: Producción: 30-60 días, Transporte marítimo: 35-45 días, Transporte aéreo: 7-10 días, Aduana en Argentina: 7-15 días. Total aproximado: 2-4 meses por barco, 1-2 meses por avión."
+        },
+        {
+          "pregunta": "¿Cómo encuentro proveedores confiables en China?",
+          "respuesta": "La búsqueda de proveedores confiables requiere un proceso detallado de validación que incluye verificación de certificaciones, historial comercial, capacidad productiva y referencias. En AOTU contamos con una red de proveedores verificados y realizamos todo el proceso de validación por vos."
+        },
+        {
+          "pregunta": "¿Qué documentos necesito para importar?",
+          "respuesta": "Los principales documentos son: Factura comercial (Commercial Invoice), Lista de empaque (Packing List), Conocimiento de embarque (Bill of Lading o Air Waybill), Certificado de origen y otros certificados específicos según el producto. Nosotros te ayudamos con toda la documentación necesaria."
+        },
+        {
+          "pregunta": "¿Cómo se manejan los pagos a proveedores en China?",
+          "respuesta": "Típicamente se realiza un pago inicial del 30% para comenzar la producción y el 70% restante contra entrega de la mercadería. Los pagos se realizan mediante transferencia bancaria internacional (SWIFT) o con otros métodos seguros que acordemos con el proveedor."
+        }
+      ],
+      "servicios": [
+        {
+          "pregunta": "¿Qué servicios ofrece AOTU?",
+          "respuesta": "Ofrecemos un servicio integral que incluye: búsqueda y validación de proveedores, negociación y control de calidad, gestión de pagos internacionales, logística desde China y gestión aduanera en Argentina. Podés contratar estos servicios en conjunto o por separado según tus necesidades."
+        },
+        {
+          "pregunta": "¿AOTU se encarga de toda la importación?",
+          "respuesta": "Sí, nos encargamos de todo el proceso de principio a fin. Desde encontrar el proveedor adecuado hasta entregar la mercadería en tu depósito. Te acompañamos en cada paso y te mantenemos informado sobre el avance de tu operación."
+        },
+        {
+          "pregunta": "¿Cómo garantizan la calidad de los productos?",
+          "respuesta": "Implementamos un riguroso sistema de control de calidad que incluye: validación inicial de muestras, inspección durante la producción, y control final antes del embarque. Trabajamos solo con proveedores verificados y supervisamos todo el proceso productivo."
+        }
+      ]
+    }
+  }
