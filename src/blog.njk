@@ -1,0 +1,89 @@
+// src/blog.njk
+---
+layout: base.njk
+title: Blog AOTU
+description: Aprende sobre importación, negocios con China y logística internacional
+permalink: /blog/
+---
+
+<!--...::: Breadcrumb Section Start :::... -->
+<section class="section-breadcrumb">
+    <div class="breadcrumb-wrapper">
+        <div class="container-default">
+            <div class="breadcrumb-block">
+                <h1 class="breadcrumb-title">Blog AOTU</h1>
+                <ul class="breadcrumb-nav">
+                    <li><a href="/">Inicio</a></li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-space">
+    <div class="container-default">
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {%- for post in collections.blog | reverse -%}
+            <article class="jos">
+                <a href="{{ post.url }}" class="group block overflow-hidden rounded-lg bg-white shadow-lg transition-all hover:shadow-xl">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="{{ post.data.featuredImage }}" 
+                             alt="{{ post.data.title }}" 
+                             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-4 flex items-center gap-4">
+                            <span class="text-sm text-aotu-red">{{ post.data.category }}</span>
+                            <span class="text-sm text-gray-500">{{ post.date | dateFilter }}</span>
+                        </div>
+                        <h2 class="mb-2 text-xl font-bold">{{ post.data.title }}</h2>
+                        <p class="mb-4 text-gray-600">{{ post.data.description }}</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Por {{ post.data.author }}</span>
+                            <span class="text-aotu-red">Leer más →</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            {%- endfor -%}
+        </div>
+    </div>
+</section>
+
+// src/_includes/layouts/post.njk
+---
+layout: base.njk
+---
+<article class="section-space">
+    <div class="container-default max-w-4xl">
+        <header class="mb-12 text-center">
+            <div class="mb-4 flex items-center justify-center gap-4">
+                <span class="text-sm text-aotu-red">{{ category }}</span>
+                <span class="text-sm text-gray-500">{{ page.date | dateFilter }}</span>
+            </div>
+            <h1 class="mb-6 text-4xl font-bold">{{ title }}</h1>
+            <p class="mb-8 text-xl text-gray-600">{{ description }}</p>
+            <div class="aspect-[2/1] overflow-hidden rounded-lg">
+                <img src="{{ featuredImage }}" 
+                     alt="{{ title }}" 
+                     class="h-full w-full object-cover">
+            </div>
+        </header>
+
+        <div class="prose prose-lg mx-auto">
+            {{ content | safe }}
+        </div>
+
+        <footer class="mt-12 border-t pt-8">
+            <div class="flex items-center justify-between">
+                <span class="text-gray-500">Por {{ author }}</span>
+                <div class="flex gap-2">
+                    {% for tag in tags %}
+                    <span class="rounded-full bg-gray-100 px-3 py-1 text-sm">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+        </footer>
+    </div>
+</article>

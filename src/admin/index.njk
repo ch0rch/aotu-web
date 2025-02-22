@@ -1,0 +1,40 @@
+// src/admin/index.njk
+---
+permalink: /admin/index.html
+---
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AOTU - Panel de Administración</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</body>
+</html>
+
+// src/admin/config.yml
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/img/blog"
+public_folder: "/assets/img/blog"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Imagen de portada", name: "featuredImage", widget: "image" }
+      - { label: "Categoría", name: "category", widget: "select", options: ["Importación", "Negocios", "China", "Logística"] }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Contenido", name: "body", widget: "markdown" }
+      - { label: "Autor", name: "author", widget: "string", default: "AOTU Team" }
