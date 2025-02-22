@@ -1,0 +1,117 @@
+{% set pricing_plans = [
+    {
+        title: "Búsqueda y Validación",
+        price: "$385",
+        period: "Por producto / informe",
+        features: [
+            "Búsqueda de proveedores",
+            "Verificación de antecedentes",
+            "Negociación de precios iniciales",
+            "Análisis de calidad y referencias",
+            "Informe detallado de opciones"
+        ],
+        cta: {
+            text: "Contratar ahora",
+            style: "border-2 border-ColorDark hover:bg-ColorDark hover:text-white"
+        }
+    },
+    {
+        title: "Gestión de Compra",
+        price: "Personalizado",
+        period: "Según volumen",
+        features: [
+            "Todo lo del plan básico",
+            "Negociación con proveedores",
+            "Gestión de pagos seguros",
+            "Control de calidad",
+            "Seguimiento de producción"
+        ],
+        cta: {
+            text: "Solicitar cotización",
+            style: "border-2 border-ColorDark hover:bg-ColorDark hover:text-white"
+        }
+    },
+    {
+        title: "Importación Completa",
+        price: "A medida",
+        period: "Servicio integral",
+        features: [
+            "Todo lo de los planes anteriores",
+            "Logística internacional",
+            "Gestión aduanera completa",
+            "Seguimiento end-to-end",
+            "Soporte prioritario"
+        ],
+        cta: {
+            text: "Solicitar cotización",
+            style: "border-2 border-ColorDark hover:bg-ColorDark hover:text-white"
+        }
+    }
+] %}
+
+<!--...::: Pricing Section Start :::... -->
+<section class="section-pricing">
+    <!-- Section Background -->
+    <div class="bg-ColorDark">
+        <!-- Section Space -->
+        <div class="section-space">
+            <!-- Section Container -->
+            <div class="container-default">
+                <!-- Section Content Wrapper -->
+                <div class="jos mb-[60px] xl:mb-20">
+                    <!-- Section Content Block -->
+                    <div class="mx-auto flex max-w-[636px] flex-col items-center justify-center">
+                        <!-- Section Tag -->
+                        <span class="text-white mb-[30px] inline-block rounded-[50px] border border-ColorDark bg-aotu-red px-[18.5px] py-[5.5px] text-base font-semibold">
+                            {{ tag | default('Servicios de Importación') }}</span>
+                        <h2 class="text-center font-Cabin font-bold leading-[1.12] text-white xl:text-[56px]">
+                            {{ title | default('La solución ideal para importar desde China') }}
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Pricing Area -->
+                <div>
+                    <!-- Pricing List -->
+                    <div class="grid gap-x-6 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+                        {% for plan in pricing_plans %}
+                        <div class="jos" data-jos_animation="flip-left" data-jos_delay="{{ loop.index0 * 0.3 }}">
+                            <div class="hover-solid-shadow after:bg-aotu-red">
+                                <div class="rounded-[10px] border-2 border-ColorDark bg-white p-[30px]">
+                                    <!-- Pricing Content Top -->
+                                    <div class="flex flex-col pb-8">
+                                        <h4 class="text-2xl font-bold text-ColorDark mb-4 text-center">{{ plan.title }}</h4>
+                                        <div class="text-center">
+                                            <span class="text-4xl font-bold">{{ plan.price }}</span>
+                                            <span class="block text-base mt-2">{{ plan.period }}</span>
+                                        </div>
+                                    </div>
+                                    <!-- Horizontal Line Separator -->
+                                    <div class="my-[30px] h-px w-full bg-ColorDark/10"></div>
+                                    <!-- Pricing Data list -->
+                                    <ul class="flex flex-col gap-y-6 text-base font-semibold text-ColorDark xl:px-[18px]">
+                                        {% for feature in plan.features %}
+                                        <li class="flex gap-x-3">
+                                            <span class="text-xl">
+                                                <i class="fa-solid fa-circle-check"></i>
+                                            </span>
+                                            {{ feature }}
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                    <div class="mt-10 flex justify-center">
+                                        <a href="#tally-open=n0DJbZ&tally-layout=modal&tally-align-left=1&tally-hide-title=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0" 
+                                           class="btn is-large is-large group w-full {{ plan.cta.style }}">
+                                            <span>{{ plan.cta.text }}</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

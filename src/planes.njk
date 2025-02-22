@@ -1,0 +1,36 @@
+---
+layout: base.njk
+title: Planes y Precios
+description: Conocé nuestros precios y planes de servicios de importación desde China. Desde búsqueda de proveedores hasta gestión aduanera completa.
+permalink: /precios/
+---
+
+<!--...::: Breadcrumb Section Start :::... -->
+<section class="section-breadcrumb">
+    <div class="breadcrumb-wrapper">
+        <div class="container-default">
+            <div class="breadcrumb-block">
+                <h1 class="breadcrumb-title">Planes y Precios</h1>
+                <ul class="breadcrumb-nav">
+                    <li><a href="/">Inicio</a></li>
+                    <li>Planes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% set title = "Elegí el plan que mejor se adapte a tus necesidades" %}
+{% set tag = "Planes flexibles" %}
+{% include "pricing-section.njk" %}
+
+<!-- Separador -->
+<div class="horizontal-line bg-ColorBlack"></div>
+
+<!--...::: FAQ Section Start :::... -->
+{% set faqSection = "servicios" %}
+{% set faqTitle = "Preguntas frecuentes sobre nuestros planes" %}
+{% set showCTA = true %}
+{% include "faq-section.njk" %}
+
+{% include "cta.njk" %}
