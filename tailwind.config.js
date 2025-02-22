@@ -56,7 +56,7 @@ module.exports = {
           dark: '#0e7490',
         },
         'aotu-grey': {
-          DEFAULT: '#666666',
+          DEFAULT: '#424242',
         },
       },
     },
