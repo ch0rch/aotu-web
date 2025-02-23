@@ -41,9 +41,9 @@ permalink: /
                              height="505" 
                              class="w-full h-auto"
                         />
-                        {% from "_includes/import-process.njk" import importProcess %}
+                        {# src/index.njk #}
 
-                        {{ importProcess() }}
+{% include "import-process.njk" %}
                     </div>
                 </div>
             </div>
