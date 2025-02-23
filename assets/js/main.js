@@ -146,3 +146,13 @@ function toggleSwitch() {
     }
   }
 }
+
+// assets/js/main.js
+import ImportProcess from './import-process.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[data-import-process]').forEach(element => {
+    const importProcess = new ImportProcess(element);
+    importProcess.init();
+  });
+});

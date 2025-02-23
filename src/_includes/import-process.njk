@@ -1,0 +1,21 @@
+{# src/_includes/import-process.njk #}
+
+{% macro importProcess() %}
+<section class="max-w-4xl mx-auto p-6 bg-white import-process" data-import-process>
+  <div class="relative h-96">
+    <div class="relative h-full" data-cards-container>
+      {# Cards will be inserted by JavaScript #}
+    </div>
+
+    <div class="absolute -bottom-12 left-0 right-0 flex justify-center space-x-2" data-nav-dots>
+      {# Navigation dots will be inserted by JavaScript #}
+    </div>
+  </div>
+
+  <div class="mt-20 text-center">
+    <p class="text-gray-600">
+      Unite a las empresas que ya importan con AOTU
+    </p>
+  </div>
+</section>
+{% endmacro %}
