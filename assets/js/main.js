@@ -148,10 +148,13 @@ function toggleSwitch() {
 }
 
 // assets/js/main.js
-import ImportProcess from './import-process.js';
+import ImportProcess from './import-process.js';  // Asegúrate de incluir la extensión .js
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('[data-import-process]').forEach(element => {
+  console.log('DOM Content Loaded');
+  const elements = document.querySelectorAll('[data-import-process]');
+  console.log('Found import process elements:', elements.length);
+  elements.forEach(element => {
     const importProcess = new ImportProcess(element);
     importProcess.init();
   });
