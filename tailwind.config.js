@@ -61,5 +61,13 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addBase }) {
+      addBase({
+        'h3': { 
+          letterSpacing: '0.025em', // Ajusta este valor según necesites
+        },
+      })
+    },
+  ],
 };
