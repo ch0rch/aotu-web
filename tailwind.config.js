@@ -65,7 +65,7 @@ module.exports = {
     function({ addBase }) {
       addBase({
         'h3': { 
-          letterSpacing: '0.025em', // Ajusta este valor según necesites
+          letterSpacing: '0.025em !important', // Ajusta este valor según necesites
         },
       })
     },
