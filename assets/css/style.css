@@ -792,6 +792,10 @@ p:last-child {
   left: 0px;
 }
 
+.left-4 {
+  left: 1rem;
+}
+
 .left-\[152px\] {
   left: 152px;
 }
@@ -802,6 +806,10 @@ p:last-child {
 
 .right-\[57px\] {
   right: 57px;
+}
+
+.top-4 {
+  top: 1rem;
 }
 
 .top-\[44px\] {
@@ -998,6 +1006,10 @@ p:last-child {
 
 .h-16 {
   height: 4rem;
+}
+
+.h-48 {
+  height: 12rem;
 }
 
 .h-5 {
@@ -1635,6 +1647,18 @@ p:last-child {
   color: rgb(10 16 47 / var(--tw-text-opacity, 1));
 }
 
+.text-ColorBlack\/50 {
+  color: rgb(10 16 47 / 0.5);
+}
+
+.text-ColorBlack\/60 {
+  color: rgb(10 16 47 / 0.6);
+}
+
+.text-ColorBlack\/70 {
+  color: rgb(10 16 47 / 0.7);
+}
+
 .text-ColorBlack\/80 {
   color: rgb(10 16 47 / 0.8);
 }
@@ -1698,6 +1722,10 @@ p:last-child {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-white\/90 {
+  color: rgb(255 255 255 / 0.9);
+}
+
 .line-through {
   text-decoration-line: line-through;
 }
@@ -1738,6 +1766,12 @@ p:last-child {
 
 .transition-all {
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -2321,6 +2355,12 @@ p:last-child {
   border-right-width: 0px;
 }
 
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:bg-ColorDark:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(25 25 25 / var(--tw-bg-opacity, 1));
@@ -2339,6 +2379,11 @@ p:last-child {
 .hover\:bg-aotu-red:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:text-ColorBlack:hover {
+  --tw-text-opacity: 1;
+  color: rgb(10 16 47 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-\[\#de0000\]:hover {
