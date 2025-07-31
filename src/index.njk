@@ -295,34 +295,6 @@ permalink: /
     </div>
 </section>
 
-<!--...::: Video Section Start :::... -->
-<section class="section-video">
-    <!-- Section Space -->
-    <div class="section-space-bottom">
-        <!-- Section Container -->
-        <div class="container-default">
-            <!-- Section Content Wrapper -->
-            <div class="jos mb-[60px] xl:mb-20">
-                <!-- Section Content Block -->
-                <div class="mx-auto max-w-[636px]">
-                    <h2 class="mb-5 text-center">
-                        Una plataforma para gestionar tus importaciones de China
-                    </h2>
-                    <p class="text-center">
-                        En nuestra plataforma podés cargar nuevas órdenes de pedido, descubrir proveedores de confianza, hacer un seguimiento del paso a paso de la compra, resolver la logística y todos los trámites aduaneros, entre muchas cosas más.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Video Block -->
-            <div class="jos">
-                <div class="relative flex items-center justify-center">
-                    <img src="/assets/img/screen-producto.png" alt="Plataforma AOTU" width="1295" height="699" class="h-auto w-full" />
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- Horizontal Text Slider -->
 <div class="overflow-hidden bg-aotu-grey py-5 font-Sora text-3xl font-semibold leading-[1.4] tracking-[1px] text-white">
@@ -358,9 +330,9 @@ permalink: /
                     <div class="mx-auto flex max-w-[636px] flex-col items-center justify-center">
                         <!-- Section Tag -->
                         <span class="text-white mb-[30px] inline-block rounded-[50px] border border-ColorDark bg-aotu-red px-[18.5px] py-[5.5px] text-base font-semibold">
-                            Servicios de Importación</span>
-                        <h2 class="text-center font-Cabin font-bold leading-[1.12] text-white xl:text-[56px]">
-                            La solución ideal para importar desde China
+                            Consultoría 1:1</span>
+                        <h2 class="text-center font-Cabin font-bold leading-[1.12] text-white xl:text-[44px]">
+                            Consultoría 1:1 en Comercio Internacional
                         </h2>
                     </div>
                 </div>
@@ -368,59 +340,44 @@ permalink: /
                 <!-- Pricing Area -->
                 <div>
                     <!-- Pricing List -->
-                    <div class="grid gap-x-6 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-                        {% set pricing_plans = [
+                    <div class="grid gap-x-6 gap-y-10 md:grid-cols-2 lg:grid-cols-2">
+                        {% set consultorias = [
                             {
-                                title: "Búsqueda y Validación",
-                                price: "$385",
-                                period: "Por producto / informe",
-                                features: [
-                                    "Búsqueda de proveedores",
-                                    "Verificación de antecedentes",
-                                    "Negociación de precios iniciales",
-                                    "Análisis de calidad y referencias",
-                                    "Informe detallado de opciones"
+                                title: "Consulta Única / Diagnóstico Express",
+                                price: "150 USD",
+                                period: "por sesión",
+                                description: "Una sesión de 60 minutos para resolver dudas específicas o asesorar en una decisión puntual. Incluye revisión previa del caso, reunión 1:1 y recomendaciones concretas.",
+                                bullets: [
+                                    "Reunión 1:1 por videollamada (Zoom/Meet/WeChat)",
+                                    "Revisión previa del caso enviado por el cliente",
+                                    "Recomendaciones concretas al finalizar",
+                                    "Envío de resumen por escrito con links útiles"
                                 ],
                                 cta: {
-                                    text: "Contratar ahora",
+                                    text: "Reservar sesión express",
                                     style: "border-2 border-ColorDark hover:bg-ColorDark hover:text-white"
                                 }
                             },
                             {
-                                title: "Gestión de Compra",
-                                price: "Personalizado",
-                                period: "Según volumen",
-                                features: [
-                                    "Todo lo del plan básico",
-                                    "Negociación con proveedores",
-                                    "Gestión de pagos seguros",
-                                    "Control de calidad",
-                                    "Seguimiento de producción"
+                                title: "Asesoría Estratégica",
+                                price: "350 USD",
+                                period: "servicio único",
+                                description: "Ideal para empresas que están considerando importar desde China pero necesitan una evaluación más completa del proceso, costos y riesgos. Incluye dos reuniones virtuales y análisis de viabilidad.",
+                                bullets: [
+                                    "2 reuniones virtuales (1 inicial + 1 de seguimiento)",
+                                    "Análisis de viabilidad y sugerencia de estrategia (FOB/CIF/DDP)",
+                                    "Estimación de márgenes y costos logísticos",
+                                    "Recomendación de ferias y regiones proveedoras",
+                                    "Plantilla editable de flujo de importación"
                                 ],
                                 cta: {
-                                    text: "Solicitar cotización",
-                                    style: "border-2 border-ColorDark hover:bg-ColorDark hover:text-white"
-                                }
-                            },
-                            {
-                                title: "Importación Completa",
-                                price: "A medida",
-                                period: "Servicio integral",
-                                features: [
-                                    "Todo lo de los planes anteriores",
-                                    "Logística internacional",
-                                    "Gestión aduanera completa",
-                                    "Seguimiento end-to-end",
-                                    "Soporte prioritario"
-                                ],
-                                cta: {
-                                    text: "Solicitar cotización",
+                                    text: "Solicitar asesoría estratégica",
                                     style: "border-2 border-ColorDark hover:bg-ColorDark hover:text-white"
                                 }
                             }
                         ] %}
 
-                        {% for plan in pricing_plans %}
+                        {% for plan in consultorias %}
                         <div class="jos" data-jos_animation="flip-left" data-jos_delay="{{ loop.index0 * 0.3 }}">
                             <div class="hover-solid-shadow after:bg-aotu-red">
                                 <div class="rounded-[10px] border-2 border-ColorDark bg-white p-[30px]">
@@ -435,8 +392,9 @@ permalink: /
                                     <!-- Horizontal Line Separator -->
                                     <div class="my-[30px] h-px w-full bg-ColorDark/10"></div>
                                     <!-- Pricing Data list -->
-                                    <ul class="flex flex-col gap-y-6 text-base font-semibold text-ColorDark xl:px-[18px]">
-                                        {% for feature in plan.features %}
+                                    <p class="mb-4 text-ColorBlack/80 text-center">{{ plan.description }}</p>
+                                    <ul class="flex flex-col gap-y-6 text-base font-semibold text-ColorDark xl:px-[18px] mb-6">
+                                        {% for feature in plan.bullets %}
                                         <li class="flex gap-x-3">
                                             <span class="text-xl">
                                                 <i class="fa-solid fa-circle-check"></i>
@@ -445,7 +403,7 @@ permalink: /
                                         </li>
                                         {% endfor %}
                                     </ul>
-                                    <div class="mt-10 flex justify-center">
+                                    <div class="mt-6 flex justify-center">
                                         <a href="#tally-open=n0DJbZ&tally-layout=modal&tally-align-left=1&tally-hide-title=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0" 
                                            class="btn is-large is-large group w-full {{ plan.cta.style }}">
                                             <span>{{ plan.cta.text }}</span>

@@ -1,80 +1,140 @@
 ---
 layout: base.njk
-title: Servicios
-description: Descubrí todos nuestros servicios de importación desde China. Desde búsqueda de proveedores hasta gestión aduanera en Argentina.
+title: Servicios de Importación desde China y Consultoría
 permalink: /servicios-importacion/
+description: Servicios de importación desde China, consultoría 1:1, asesoría estratégica y externalización de comercio exterior para empresas. Importá con seguridad y respaldo profesional.
 ---
 
 <main class="main-wrapper relative overflow-hidden">
-    <!--...::: Breadcrumb Section Start :::... -->
+    <!-- Intro SEO -->
     <section class="section-breadcrumb">
         <div class="breadcrumb-wrapper">
             <div class="container-default">
-                <div class="breadcrumb-block">
-                    <h1 class="breadcrumb-title">Nuestros Servicios para Importar de China</h1>
-                    <ul class="breadcrumb-nav">
-                        <li><a href="/">Inicio</a></li>
-                        <li>Servicios</li>
-                    </ul>
+                <div class="breadcrumb-block text-center">
+                    <h1 class="breadcrumb-title">Servicios de Importación y Consultoría</h1>
+                    <p class="max-w-2xl mx-auto mt-4 text-lg text-ColorBlack/80">
+                        Soluciones profesionales para importar desde China: consultoría personalizada, gestión integral y externalización de comercio exterior. Elegí el servicio que mejor se adapta a tu empresa y avanzá con confianza.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 mt-8">
+                        <a href="#consultoria" class="btn is-black group inline-block rounded">
+                            <span>Consultoría 1:1</span>
+                        </a>
+                        <a href="#integral" class="btn is-black group inline-block rounded">
+                            <span>Servicio Integral</span>
+                        </a>
+                        <a href="#externalizacion" class="btn is-black group inline-block rounded">
+                            <span>Externalización</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--...::: Service Section Start :::... -->
-    <div class="section-service">
+    <!-- Servicios agrupados -->
+    <section class="section-service">
         <div class="relative z-10 overflow-hidden">
             <div class="section-space">
                 <div class="container-default">
-                    <div class="grid gap-6 sm:grid-cols-2">
-                        {% for servicio in servicios.servicios %}
-                        <div class="jos" data-jos_delay="{{ servicio.delay }}">
-                            <div class="group rounded-[10px] bg-white p-8 transition-all duration-300 ease-in-out hover:shadow-[0_4px_60px_0_rgba(10,16,47,0.06)] lg:p-10">
-                                <div class="flex flex-col gap-x-10 gap-y-6 sm:gap-y-8 lg:flex-row">
-                                    <div class="relative mx-auto flex w-16 items-center justify-center lg:w-[98px]">
-                                        <img src="{{ servicio.imagen }}" 
-                                             alt="{{ servicio.title }}" 
-                                             width="98" 
-                                             height="100" 
-                                             class="opcity-100 h-auto w-full transition-all duration-300 ease-in-out group-hover:opacity-0" />
-                                        <img src="{{ servicio.imagen }}" 
-                                             alt="{{ servicio.title }}" 
-                                             width="98" 
-                                             height="100" 
-                                             class="absolute h-auto w-full opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100" />
+                    {% for grupo in servicios.servicios %}
+                        {% if grupo.grupo == "Consultoría 1:1 en Comercio Internacional" %}
+                        <!-- Servicio Integral destacado -->
+                        <div id="consultoria" class="mb-12 lg:mb-20">
+                            <h2 class="text-3xl lg:text-4xl font-bold text-aotu-red mb-8">{{ grupo.grupo }}</h2>
+                            {% for servicio in grupo.servicios %}
+                            <div class="jos rounded-[10px] bg-white p-8 lg:p-12 mb-8 shadow" data-jos_delay="{{ servicio.delay }}">
+                                <div class="flex flex-col lg:flex-row gap-8 items-center">
+                                    <div class="flex-shrink-0 flex items-center justify-center w-20 h-20 bg-aotu-grey rounded-full">
+                                        <img src="{{ servicio.imagen }}" alt="{{ servicio.title }}" width="80" height="80" class="h-16 w-16 object-contain" />
                                     </div>
                                     <div class="flex-1 text-center lg:text-left">
-                                        <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack lg:text-2xl">
-                                            {{ servicio.title }}
-                                        </div>
-                                        <p class="mb-5 line-clamp-2 text-ColorBlack/80">
-                                            {{ servicio.description }}
-                                        </p>
-                                        <a href="{{ servicio.link }}" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-aotu-red">
-                                            {{ servicio.linkText }}
-                                            <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </span>
+                                        <div class="mb-2 text-2xl font-bold text-ColorBlack">{{ servicio.title }}</div>
+                                        <p class="mb-4 text-ColorBlack/80">{{ servicio.description }}</p>
+                                        {% if servicio.bullets %}
+                                        <ul class="mb-4 flex flex-col gap-2 text-left text-ColorBlack/90 list-disc list-inside">
+                                            {% for bullet in servicio.bullets %}
+                                            <li>{{ bullet }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                        {% endif %}
+                                        <span class="inline-block font-bold text-aotu-red text-lg mb-2">{{ servicio.precio }}</span><br>
+                                        <a href="{{ servicio.cta.link }}" class="btn is-black group inline-block rounded mt-2">
+                                            <span>{{ servicio.cta.text }}</span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
+                            {% endfor %}
                         </div>
-                        {% endfor %}
-                    </div>
+                        {% elif grupo.grupo == "Servicio Integral de Importación desde China" %}
+                        <!-- Otros servicios (ancho completo) -->
+                        <div id="integral" class="mb-12 lg:mb-20">
+                            <h2 class="text-3xl lg:text-4xl font-bold text-aotu-red mb-8">{{ grupo.grupo }}</h2>
+                            {% for servicio in grupo.servicios %}
+                            <div class="jos bg-gray-50 rounded-[10px] p-8 lg:p-12 mb-8" data-jos_delay="{{ servicio.delay }}">
+                                <div class="flex flex-col lg:flex-row gap-8 items-center">
+                                    <div class="flex-shrink-0 flex items-center justify-center w-20 h-20 bg-white rounded-full shadow">
+                                        <img src="{{ servicio.imagen }}" alt="{{ servicio.title }}" width="80" height="80" class="h-16 w-16 object-contain" />
+                                    </div>
+                                    <div class="flex-1 text-center lg:text-left">
+                                        <div class="mb-2 text-2xl font-bold text-ColorBlack">{{ servicio.title }}</div>
+                                        <p class="mb-4 text-ColorBlack/80">{{ servicio.description }}</p>
+                                        {% if servicio.bullets %}
+                                        <ul class="mb-4 flex flex-col gap-2 text-left text-ColorBlack/90 list-disc list-inside">
+                                            {% for bullet in servicio.bullets %}
+                                            <li>{{ bullet }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                        {% endif %}
+                                        <span class="inline-block font-bold text-aotu-red text-lg mb-2">{{ servicio.precio }}</span><br>
+                                        <a href="{{ servicio.cta.link }}" class="btn is-black group inline-block rounded mt-2">
+                                            <span>{{ servicio.cta.text }}</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% elif grupo.grupo == "Externalización de Comercio Exterior (Retainer)" %}
+                        <!-- Otros servicios (ancho completo) -->
+                        <div id="externalizacion" class="mb-12 lg:mb-20">
+                            <h2 class="text-3xl lg:text-4xl font-bold text-aotu-red mb-8">{{ grupo.grupo }}</h2>
+                            {% for servicio in grupo.servicios %}
+                            <div class="jos rounded-[10px] bg-white p-8 lg:p-12 mb-8 shadow" data-jos_delay="{{ servicio.delay }}">
+                                <div class="flex flex-col lg:flex-row gap-8 items-center">
+                                    <div class="flex-shrink-0 flex items-center justify-center w-20 h-20 bg-aotu-grey rounded-full">
+                                        <img src="{{ servicio.imagen }}" alt="{{ servicio.title }}" width="80" height="80" class="h-16 w-16 object-contain" />
+                                    </div>
+                                    <div class="flex-1 text-center lg:text-left">
+                                        <div class="mb-2 text-2xl font-bold text-ColorBlack">{{ servicio.title }}</div>
+                                        <p class="mb-4 text-ColorBlack/80">{{ servicio.description }}</p>
+                                        {% if servicio.bullets %}
+                                        <ul class="mb-4 flex flex-col gap-2 text-left text-ColorBlack/90 list-disc list-inside">
+                                            {% for bullet in servicio.bullets %}
+                                            <li>{{ bullet }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                        {% endif %}
+                                        <span class="inline-block font-bold text-aotu-red text-lg mb-2">{{ servicio.precio }}</span><br>
+                                        <a href="{{ servicio.cta.link }}" class="btn is-black group inline-block rounded mt-2">
+                                            <span>{{ servicio.cta.text }}</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    {% endfor %}
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Horizontal Separator -->
+    <!-- FAQ y CTA final -->
     <div class="horizontal-line bg-ColorBlack"></div>
-
-    <!--...::: FAQ Section Start :::... -->
-    {# En servicios.njk #}
-    {% set faqTitle = "Preguntas frecuentes sobre importación" %}
+    {% set faqTitle = "Preguntas frecuentes sobre importación y servicios AOTU" %}
     {% set showCTA = true %}
     {% include "faq-section.njk" %}
-
     {% include "cta.njk" %}
 </main>

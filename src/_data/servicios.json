@@ -1,36 +1,114 @@
 {
-    "servicios": [
-      {
-        "title": "Búsqueda de Proveedores",
-        "description": "Nos encargamos de encontrar los proveedores más adecuados en China, evaluando precios, calidad y tiempos de entrega. Si el cliente ya tiene un proveedor, verificamos que cumpla con los estándares necesarios.",
-        "link": "#tally-open=n0DJbZ&tally-layout=modal&tally-align-left=1&tally-hide-title=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0",
-        "linkText": "Conocer más",
-        "imagen": "/assets/img/serv-busqueda.png",
-        "delay": "0"
-      },
-      {
-        "title": "Control de Calidad",
-        "description": "Supervisamos el proceso de fabricación para garantizar que se cumplan los plazos y requisitos acordados.",
-        "link": "#tally-open=n0DJbZ&tally-layout=modal&tally-align-left=1&tally-hide-title=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0",
-        "linkText": "Conocer más",
-        "imagen": "/assets/img/serv-calidad.png",
-        "delay": "0.3"
-      },
-      {
-        "title": "Logística Internacional",
-        "description": "Planificamos la logística desde China, asegurando que la mercadería esté lista para su despacho en el menor tiempo posible.",
-        "link": "#tally-open=n0DJbZ&tally-layout=modal&tally-align-left=1&tally-hide-title=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0",
-        "linkText": "Conocer más",
-        "imagen": "/assets/img/serv-logistica.png",
-        "delay": "0.6"
-      },
-      {
-        "title": "Gestión Aduanera en Argentina",
-        "description": "Si el cliente no cuenta con un importador propio, AOTU trabaja con su equipo de despachantes para realizar la importación. Nos encargamos del proceso de nacionalización de la mercadería, asegurando que se cumplan todas las regulaciones y evitando demoras.",
-        "link": "#tally-open=n0DJbZ&tally-layout=modal&tally-align-left=1&tally-hide-title=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0",
-        "linkText": "Conocer detalles",
-        "imagen": "/assets/img/serv-aduana.png",
-        "delay": "0.9"
-      }
-    ]
-  }
+  "servicios": [
+    {
+      "grupo": "Consultoría 1:1 en Comercio Internacional",
+      "servicios": [
+        {
+          "title": "Consulta Única / Diagnóstico Express",
+          "description": "Una sesión de 60 minutos para resolver dudas específicas o asesorar en una decisión puntual. Incluye revisión previa del caso, reunión 1:1 por videollamada, recomendaciones concretas y envío de resumen por escrito con links y contactos útiles.",
+          "bullets": [
+            "Reunión 1:1 por videollamada (Zoom/Meet/WeChat)",
+            "Revisión previa del caso enviado por el cliente",
+            "Recomendaciones concretas al finalizar",
+            "Envío de resumen por escrito con links, contactos o fuentes útiles"
+          ],
+          "precio": "150 USD / sesión",
+          "cta": {
+            "text": "Reservar sesión express",
+            "link": "#tally-open=n0DJbZ&tally-layout=modal&tally-align-left=1&tally-hide-title=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0"
+          },
+          "imagen": "/assets/img/serv-busqueda.png",
+          "delay": "0"
+        },
+        {
+          "title": "Asesoría Estratégica",
+          "description": "Ideal para empresas que están considerando importar desde China pero necesitan una evaluación más completa del proceso, costos y riesgos. Incluye dos reuniones virtuales, análisis de viabilidad, estimación de márgenes y costos logísticos, recomendación de ferias y regiones proveedoras, y plantilla editable de flujo de importación.",
+          "bullets": [
+            "2 reuniones virtuales (1 inicial + 1 de seguimiento)",
+            "Análisis de viabilidad y sugerencia de estrategia (FOB/CIF/DDP)",
+            "Estimación de márgenes y costos logísticos aproximados",
+            "Recomendación de ferias, regiones proveedoras y plataformas",
+            "Plantilla editable de flujo de importación"
+          ],
+          "precio": "350 USD / servicio único",
+          "cta": {
+            "text": "Solicitar asesoría estratégica",
+            "link": "#tally-open=n0DJbZ&tally-layout=modal&tally-align-left=1&tally-hide-title=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0"
+          },
+          "imagen": "/assets/img/serv-calidad.png",
+          "delay": "0.3"
+        }
+      ]
+    },
+    {
+      "grupo": "Servicio Integral de Importación desde China",
+      "servicios": [
+        {
+          "title": "Servicio de Importación Integral desde China",
+          "description": "Para empresas que desean importar productos desde China sin asumir riesgos ni carga operativa. Nos encargamos de todo: búsqueda de proveedores, negociación, contratos, seguimiento de producción, control de calidad, logística internacional y asistencia post-venta.",
+          "bullets": [
+            "Búsqueda y validación de proveedores confiables",
+            "Negociación estratégica de precios y condiciones",
+            "Redacción/revisión de contratos y términos de operación",
+            "Seguimiento de producción y pagos",
+            "Control de calidad previo al embarque",
+            "Coordinación de logística internacional",
+            "Asistencia post-venta y gestión de reclamos"
+          ],
+          "precio": "Cotización personalizada",
+          "cta": {
+            "text": "Solicitar servicio integral",
+            "link": "#tally-open=n0DJbZ&tally-layout=modal&tally-align-left=1&tally-hide-title=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0"
+          },
+          "imagen": "/assets/img/serv-logistica.png",
+          "delay": "0.6"
+        }
+      ]
+    },
+    {
+      "grupo": "Externalización de Comercio Exterior (Retainer)",
+      "servicios": [
+        {
+          "title": "Plan Base - Aotu Básico",
+          "description": "Pensado para empresas que realizan pocas importaciones al año o están dando sus primeros pasos en China pero quieren un respaldo profesional continuo. Incluye búsqueda y validación básica de proveedores, asesoramiento ilimitado, firma y revisión de contratos, seguimiento básico de producción y soporte logístico mensual.",
+          "bullets": [
+            "1 búsqueda de proveedor por mes (hasta 3 opciones)",
+            "Validación básica de proveedores",
+            "Asesoramiento ilimitado por WeChat/Correo",
+            "Firma y revisión de cotizaciones y contratos",
+            "Seguimiento básico de la producción",
+            "Soporte para 1 operación logística por mes"
+          ],
+          "precio": "750 USD / mes",
+          "cta": {
+            "text": "Quiero respaldo profesional",
+            "link": "#tally-open=n0DJbZ&tally-layout=modal&tally-align-left=1&tally-hide-title=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0"
+          },
+          "imagen": "/assets/img/serv-aduana.png",
+          "delay": "0.9"
+        },
+        {
+          "title": "Plan Premium - Aotu Integral/Ejecutivo",
+          "description": "Para empresas que importan regularmente y necesitan un equipo confiable sin asumir estructura interna. Incluye búsquedas y desarrollo de producto ilimitado, validación y auditorías a proveedores, coordinación completa de producción, seguimiento de embarques múltiples, asistencia aduanera, reuniones periódicas y soporte prioritario.",
+          "bullets": [
+            "Búsquedas y desarrollo de producto ilimitado",
+            "Validación y auditorías a proveedores (video o presencial)",
+            "Coordinación completa de producción y control de calidad",
+            "Seguimiento de embarques múltiples y consolidación",
+            "Preparación de documentación y asistencia aduanera",
+            "Reuniones periódicas y acceso a panel de control",
+            "1 estudio de costo previo a la inversión",
+            "Soporte prioritario 24/7"
+          ],
+          "precio": "1.500 USD / mes",
+          "cta": {
+            "text": "Quiero equipo externo en China",
+            "link": "#tally-open=n0DJbZ&tally-layout=modal&tally-align-left=1&tally-hide-title=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0"
+          },
+          "imagen": "/assets/img/serv-aduana.png",
+          "delay": "1.2"
+        }
+      ]
+    }
+  ]
+}
