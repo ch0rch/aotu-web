@@ -889,6 +889,10 @@ p:last-child {
   margin-bottom: 2rem;
 }
 
+.mb-\[20px\] {
+  margin-bottom: 20px;
+}
+
 .mb-\[30px\] {
   margin-bottom: 30px;
 }
@@ -955,6 +959,10 @@ p:last-child {
 
 .mt-\[60px\] {
   margin-top: 60px;
+}
+
+.mb-\[25px\] {
+  margin-bottom: 25px;
 }
 
 .block {
@@ -1029,6 +1037,10 @@ p:last-child {
   height: 30px;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .h-\[60px\] {
   height: 60px;
 }
@@ -1043,6 +1055,10 @@ p:last-child {
 
 .h-px {
   height: 1px;
+}
+
+.h-\[70px\] {
+  height: 70px;
 }
 
 .w-0\.5 {
@@ -1187,6 +1203,10 @@ p:last-child {
   align-items: baseline;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -1282,6 +1302,18 @@ p:last-child {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1423,6 +1455,11 @@ p:last-child {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
+.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -1430,11 +1467,6 @@ p:last-child {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
 }
 
 .object-contain {
@@ -1455,8 +1487,20 @@ p:last-child {
   padding: 2rem;
 }
 
+.p-\[25px\] {
+  padding: 25px;
+}
+
 .p-\[30px\] {
   padding: 30px;
+}
+
+.p-\[35px\] {
+  padding: 35px;
+}
+
+.p-\[40px\] {
+  padding: 40px;
 }
 
 .px-2 {
@@ -1640,12 +1684,20 @@ p:last-child {
   line-height: 1.13;
 }
 
+.leading-\[1\.2\] {
+  line-height: 1.2;
+}
+
 .leading-\[1\.33\] {
   line-height: 1.33;
 }
 
 .leading-\[1\.4\] {
   line-height: 1.4;
+}
+
+.-tracking-\[0\.3px\] {
+  letter-spacing: -0.3px;
 }
 
 .-tracking-\[0\.5px\] {
@@ -1750,6 +1802,10 @@ p:last-child {
 
 .text-white\/90 {
   color: rgb(255 255 255 / 0.9);
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .line-through {
@@ -2420,6 +2476,11 @@ p:last-child {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.hover\:text-gray-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -2688,6 +2749,10 @@ p:last-child {
     margin-top: 5rem;
   }
 
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
   .xl\:grid-cols-\[1\.4fr_minmax\(0\2c _1fr\)\] {
     grid-template-columns: 1.4fr minmax(0, 1fr);
   }
@@ -2698,6 +2763,14 @@ p:last-child {
 
   .xl\:grid-cols-\[1fr_minmax\(0\2c _1\.2fr\)\] {
     grid-template-columns: 1fr minmax(0, 1.2fr);
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:gap-\[143px\] {
@@ -2741,12 +2814,12 @@ p:last-child {
     line-height: 1;
   }
 
-  .xl\:text-\[56px\] {
-    font-size: 56px;
-  }
-
   .xl\:text-\[44px\] {
     font-size: 44px;
+  }
+
+  .xl\:text-\[56px\] {
+    font-size: 56px;
   }
 }
 
